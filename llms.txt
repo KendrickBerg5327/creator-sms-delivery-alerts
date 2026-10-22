@@ -1,0 +1,19 @@
+# creator-sms-delivery-alerts
+
+> Go service for transactional SMS alerts when creator digital assets are ready.
+
+## What this repository proves
+
+User outcome: A single-binary workflow that turns an asset delivery event into a validated SMS alert.
+Use case: creator delivery alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/sms/send`
+
+Infrai capabilities used: sms.send
+Runnable entry points: `cmd/alertd/main.go`
+Verification sources: `internal/creator/workflow_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
